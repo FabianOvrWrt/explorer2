@@ -1,38 +1,38 @@
 {
-  "name": "Explorer",
-  "description": "Allows to select a file and share it with an app, bluetooth or email.",
-  "type": "privileged",
-  "role": "system",
-  "launch_path": "/index.html",
-  "version": "0.1.2",
-  "icons": {
-    "128": "/css/images/logo_128.png"
-  },
-  "developer": {
-    "name": "Sebastian Rajo",
-    "url": "http://www.prottotipo.com/explorer"
-  },
-  "permissions": {
-    "desktop-notification": {
-      "description": "To show notifications to the user"
-    },
-    "device-storage:sdcard": {
-      "description": "To pick a file from the SDCARD",
-      "access": "readonly"
-    }
-  },
-"locales": {
-	"es": {
-  "name": "Explorador",
-  "description": "Permite seleccionar un archivo y compartirlo con una aplicación, bluetooth o email"
+	"name": "Explorer",
+	"description": "Allows to select a file and share it with an app, bluetooth or email.",
+	"launch_path": "/index.html",
+	"icons": {
+		"128": "/css/images/logo_128.png"
+	},
+	"version": "0.1.2",
+	"developer": {
+		"name": "FabianOvrWrt",
+		"url": "https://github.com/fabianovrwrt"
+	},
+	"default_locale": "en",
+	"permissions": {
+		"desktop-notification": {
+		"description": "To show notifications to the user"
 		},
-  "activities": {
-    "pick": {
-      "disposition": "inline",
-      "returnValue": true,
-      "href": "/index.html"
-    }
-  },
-  "default_locale": "en"
-	}
+		"device-storage:sdcard": {
+		"description": "To pick a file from the SDCARD",
+		"access": "readonly"
+		}
+	},
+		"activities": {
+			"pick": {
+			"disposition": "inline",
+			"returnValue": true,
+			"href": "/index.html"
+		}
+	},
+	"locales": {
+		"es": {
+			"name": "Explorador",
+			"description": "Permite seleccionar un archivo y compartirlo con una aplicación, bluetooth o email."
+		}
+	},
+	"type": "privileged",
+	"role": "system"
 }
